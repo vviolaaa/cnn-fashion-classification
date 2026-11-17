@@ -1,13 +1,13 @@
-group,idx,true,true_id,pred,pred_id,prob
-correct_high,4584,Ankle boot,9,Ankle boot,9,0.9991
-correct_high,1446,Dress,3,Dress,3,0.9959
-correct_high,462,Pullover,2,Pullover,2,0.9985
-correct_low,5173,Coat,4,Coat,4,0.5923
-correct_low,8054,Dress,3,Dress,3,0.5979
-correct_low,4643,Shirt,6,Shirt,6,0.5724
-wrong_high,851,Pullover,2,Coat,4,0.9452
-wrong_high,1329,Coat,4,Pullover,2,0.9172
-wrong_high,4886,Shirt,6,T-shirt,0,0.9774
-wrong_low,7442,Pullover,2,Coat,4,0.5289
-wrong_low,7831,T-shirt,0,Shirt,6,0.5105
-wrong_low,2840,Shirt,6,T-shirt,0,0.511
+group,idx,true,true_id,pred,pred_id,prob,cam_on_object
+correct_high,4584,Ankle boot,9,Ankle boot,9,0.9991,0.5401496291160583
+correct_high,1446,Dress,3,Dress,3,0.9959,0.44874072074890137
+correct_high,462,Pullover,2,Pullover,2,0.9985,0.7215526103973389
+correct_low,5173,Coat,4,Coat,4,0.5923,0.8192092180252075
+correct_low,8054,Dress,3,Dress,3,0.5979,0.5424954295158386
+correct_low,4643,Shirt,6,Shirt,6,0.5724,0.68315589427948
+wrong_high,851,Pullover,2,Coat,4,0.9452,0.5881208777427673
+wrong_high,1329,Coat,4,Pullover,2,0.9172,0.765025794506073
+wrong_high,4886,Shirt,6,T-shirt,0,0.9774,0.608159601688385
+wrong_low,7442,Pullover,2,Coat,4,0.5289,0.6203668117523193
+wrong_low,7831,T-shirt,0,Shirt,6,0.5105,0.6275665163993835
+wrong_low,2840,Shirt,6,T-shirt,0,0.511,0.5462209582328796
