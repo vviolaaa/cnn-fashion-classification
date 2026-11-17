@@ -1,0 +1,12 @@
+{
+  "hyperband": {
+    "trials": 26,
+    "total_epochs": 106,
+    "time_s": 2140.0
+  },
+  "random": {
+    "trials": 7,
+    "total_epochs": 90,
+    "time_s": 1148.3
+  }
+}

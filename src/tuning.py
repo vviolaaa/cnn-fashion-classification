@@ -52,13 +52,16 @@ def early_stop():
 
 
 class BudgetTracker(keras.callbacks.Callback):
-    """Рахує реально виконані епохи (для чесного порівняння бюджетів)."""
-    def __init__(self):
-        super().__init__()
-        self.epochs = 0
+    """KerasTuner копіює callbacks для кожного випробування, тому лічильник
+    зберігаємо на рівні класу."""
+    total = 0
+
+    @classmethod
+    def reset(cls):
+        cls.total = 0
 
     def on_epoch_end(self, epoch, logs=None):
-        self.epochs += 1
+        BudgetTracker.total += 1
 
 
 def trials_to_df(tuner):
@@ -81,3 +84,7 @@ def save_json(obj, name):
 def load_json(name):
     with open(f"{RESULTS}/{name}", encoding="utf-8") as f:
         return json.load(f)
+    
+def planned_epochs(df):
+    start = df["tuner/initial_epoch"].fillna(0)
+    return int((df["tuner/epochs"] - start).sum())
