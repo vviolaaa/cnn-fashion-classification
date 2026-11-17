@@ -1,0 +1,4 @@
+model,config,val_acc,test_acc,test_loss,params,train_time_s,epochs_run
+baseline,"{'filters': 32, 'kernel_size': 3, 'dropout': 0.0}",0.925599992275238,0.916100025177002,0.2329639345407486,220234,122.9,11
+hyperband_best,"{'filters': 32, 'kernel_size': 5, 'dropout': 0.5}",0.9318000078201294,0.9240000247955322,0.21506261825561523,253514,245.1,15
+random_best,"{'filters': 64, 'kernel_size': 3, 'dropout': 0.5}",0.9341999888420105,0.9233999848365784,0.2170916199684143,238986,244.3,15

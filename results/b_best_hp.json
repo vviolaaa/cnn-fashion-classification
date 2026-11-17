@@ -1,0 +1,12 @@
+{
+  "hyperband": {
+    "filters": 32,
+    "kernel_size": 5,
+    "dropout": 0.5
+  },
+  "random": {
+    "filters": 64,
+    "kernel_size": 3,
+    "dropout": 0.5
+  }
+}
