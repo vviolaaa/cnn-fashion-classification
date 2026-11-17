@@ -1,0 +1,7 @@
+experiment,config,params,train_time_s,val_acc,test_acc,test_loss
+baseline,"filters=(32, 64), kernel_size=3, pooling=max, activation=relu",220234,78.1,0.915,0.9051,0.3032
+filters_16_32,"filters=(16, 32), kernel_size=3, pooling=max, activation=relu",105866,37.7,0.9182,0.9059,0.2759
+filters_64_128,"filters=(64, 128), kernel_size=3, pooling=max, activation=relu",476618,200.8,0.9236,0.9156,0.3341
+kernel_5,"filters=(32, 64), kernel_size=5, pooling=max, activation=relu",253514,130.0,0.9188,0.905,0.3503
+pooling_stride,"filters=(32, 64), kernel_size=3, pooling=stride, activation=relu",266410,118.5,0.918,0.9048,0.4451
+activation_tanh,"filters=(32, 64), kernel_size=3, pooling=max, activation=tanh",220234,83.7,0.9256,0.9097,0.2829
