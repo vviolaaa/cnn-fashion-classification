@@ -1,0 +1,14 @@
+{
+  "model": "baseline",
+  "config": {
+    "filters": 32,
+    "kernel_size": 3,
+    "dropout": 0.0
+  },
+  "val_acc": 0.925599992275238,
+  "test_acc": 0.916100025177002,
+  "test_loss": 0.2329639345407486,
+  "params": 220234,
+  "train_time_s": 122.9,
+  "epochs_run": 11
+}
