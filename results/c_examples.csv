@@ -1,0 +1,13 @@
+group,idx,true,true_id,pred,pred_id,prob
+correct_high,4584,Ankle boot,9,Ankle boot,9,0.9991
+correct_high,1446,Dress,3,Dress,3,0.9959
+correct_high,462,Pullover,2,Pullover,2,0.9985
+correct_low,5173,Coat,4,Coat,4,0.5923
+correct_low,8054,Dress,3,Dress,3,0.5979
+correct_low,4643,Shirt,6,Shirt,6,0.5724
+wrong_high,851,Pullover,2,Coat,4,0.9452
+wrong_high,1329,Coat,4,Pullover,2,0.9172
+wrong_high,4886,Shirt,6,T-shirt,0,0.9774
+wrong_low,7442,Pullover,2,Coat,4,0.5289
+wrong_low,7831,T-shirt,0,Shirt,6,0.5105
+wrong_low,2840,Shirt,6,T-shirt,0,0.511
