@@ -38,7 +38,7 @@ for group, g in ex.groupby("group", sort=False):
         axes[r, 2].set_title(f"Occlusion (r={corr:.2f})", fontsize=8)
         shown = img.copy(); shown[mask] = FILL
         show_overlay(axes[r, 3], shown, None,
-                     f"закрито Grad-CAM: -{d_cam:.2f}; випадково: -{d_rand:.2f}")
+                     f"Δp закрито Grad-CAM: {d_cam:+.2f}; випадково: {d_rand:+.2f}")
     fig.suptitle(f"{group}: Grad-CAM vs Occlusion (світліше = більше падіння ймовірності)", fontsize=10)
     plt.tight_layout()
     plt.savefig(group_figure_path("c_occlusion", group), dpi=150)

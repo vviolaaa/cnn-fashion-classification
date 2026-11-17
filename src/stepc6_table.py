@@ -12,7 +12,7 @@ table = pd.DataFrame({
     "Прогнозований клас": df["pred"],
     "Ймовірність прогнозу": df["prob"].map("{:.2f}".format),
     "Область Grad-CAM": df["cam_on_object"].map(lambda v: "карта порожня" if pd.isna(v) else f"{v:.0%} на об'єкті"),
-    "Результат закриття області": [f"Grad-CAM: -{a:.2f}; випадкова: -{b:.2f}; r=" + ("н/д" if pd.isna(r) else f"{r:.2f}")
+    "Результат закриття області": [f"Grad-CAM: {a:+.2f}; випадкова: {b:+.2f}; r=" + ("н/д" if pd.isna(r) else f"{r:.2f}")
                                    for a, b, r in zip(df.drop_gradcam, df.drop_random, df.corr_cam_occ)],
     "Висновок": "",            # <-- заповнити вручну після перегляду малюнків
 })
